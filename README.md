@@ -5,13 +5,44 @@ This README provides instructions for building a recommendation engine using Pyt
 - **Product Catalog:** Built on Nest.js
 - **Admin Panel:** Built on .NET
 
-## Purpose
-The recommendation engine enhances the shopping experience by suggesting products to users based on their preferences, interactions, and other behavioral patterns. It helps:
+## 1. Project Overview
 
-- **Increase Sales:** Personalized recommendations drive conversions.
-- **Improve User Engagement:** Relevant suggestions keep users engaged longer.
-- **Boost Retention:** Satisfied customers are more likely to return.
-- **Optimize Inventory Management:** Highlight products with high relevance or low visibility.
+- **Goal**: Suggest products based on user interactions (purchases, clicks, ratings).
+- **Key Outcomes**:
+  - Increase sales through personalized recommendations.
+  - Improve user engagement and retention.
+  - Optimize inventory management by surfacing relevant products.
+
+---
+
+## 2. Prerequisites & Environment Setup
+
+### 2.1. Technologies & Packages
+
+1. **Python 3.x**  
+   Ensure Python 3 is installed.
+
+2. **Data Manipulation & Analysis**  
+   - [**Pandas**](https://pandas.pydata.org/) for handling tabular data.
+   - [**NumPy**](https://numpy.org/) for numerical computations.
+
+3. **Modeling & Machine Learning**  
+   - [**PyTorch**](https://pytorch.org/) for building and training neural network models.
+   - [**scikit-learn**](https://scikit-learn.org/stable/) for data splitting, metrics, and preprocessing.
+
+4. **Optional Libraries**  
+   - [**LightFM**](https://github.com/lyst/lightfm) for hybrid matrix factorization.
+   - [**Surprise**](https://surpriselib.com/) for collaborative filtering algorithms.
+
+5. **Database & Caching**  
+   - **PostgreSQL** or **MongoDB** for data storage (if needed).
+   - **Redis** for caching frequently accessed recommendations.
+
+6. **Deployment Tools**  
+   - [**FastAPI**](https://fastapi.tiangolo.com/) or [**Flask**](https://flask.palletsprojects.com/) for building an API.
+   - **Docker** to containerize your application for production.
+
+---
 
 ## Features
 - Personalized product recommendations.
@@ -85,6 +116,30 @@ The engine operates on:
    - The FastAPI server processes requests and fetches recommendations dynamically.
 
 ---
+
+## Required components:
+### Core packages:
+- TensorFlow/Keras for neural network implementation
+- Pandas for data manipulation
+- NumPy for numerical operations
+- Scikit-learn for preprocessing
+
+### Data requirements:
+- User interaction data (purchases, ratings, clicks)
+- Product metadata
+- User features (optional)
+
+### Additional technologies to consider:
+- PostgreSQL/MongoDB for data storage
+- Redis for caching recommendations
+- FastAPI/Flask for API deployment
+- Docker for containerization
+
+### Alternative approaches:
+- Collaborative filtering using Surprise library
+- Content-based using scikit-learn
+- Matrix factorization using LightFM
+- Deep learning using PyTorch
 
 ## Technologies and Tools
 ### Backend (Recommendation Engine)
